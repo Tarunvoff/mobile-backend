@@ -54,7 +54,6 @@ const operatorSchema = new mongoose.Schema(
   }
 );
 
-operatorSchema.index({ code: 1 });
 
 const Operator = mongoose.model('Operator', operatorSchema);
 

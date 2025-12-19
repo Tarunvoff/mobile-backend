@@ -87,9 +87,6 @@ const rechargeSchema = new mongoose.Schema(
   }
 );
 
-rechargeSchema.index({ createdAt: -1 });
-rechargeSchema.index({ transactionId: 1 });
-rechargeSchema.index({ serviceType: 1, identifier: 1, createdAt: -1 });
 
 const Recharge = mongoose.model('Recharge', rechargeSchema);
 
